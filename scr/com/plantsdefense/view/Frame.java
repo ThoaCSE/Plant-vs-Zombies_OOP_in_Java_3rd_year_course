@@ -7,6 +7,10 @@ public class Frame extends JFrame{
     public static String title = "Plants Defense";
     public static Dimension size = new Dimension(1920, 1080);
 
+    private void define(){
+
+    }
+
     public Frame (){
         setTitle(title);
         setSize(size);
@@ -17,6 +21,9 @@ public class Frame extends JFrame{
     }
 
     public static void main(String[] args){
-        new Frame();
+        JFrame frame = new Frame();
+        Screen screen = new Screen();
+        frame.add(screen);
+        // SwingUtilities.invokeLater();
     }
 }
